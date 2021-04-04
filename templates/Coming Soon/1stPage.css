@@ -1,0 +1,27 @@
+body {
+    background-color: #f8f8f8;
+    font-family: 'Lato', sans-serif;
+	color: rgb(34, 34, 34);
+}
+
+nav {
+    color:rgb(22, 22, 22);
+    size: 40px;
+}
+
+.icon-bar {
+    color: rgb(34, 34, 34);
+}
+
+.d-flex {
+    padding-top: 100px;
+}
+
+.btn {
+    size: 20px;
+}
+
+a {
+    padding-inline: 10px;
+    font-size: 2em;
+}
