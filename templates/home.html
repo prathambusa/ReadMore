@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Read More</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <style>
+    body {
+	background-image: url(https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8bGlicmFyeXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80);
+	background-position: center;
+	background-size: cover;
+	font-family: 'Lato', sans-serif;
+	color: white;
+}
+
+
+#content {
+	text-align: center;
+	padding-top: 15%;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.7),
+                 0px 8px 13px rgba(0,0,0,0.4),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+h1{
+	font-size: 7em;
+	font-weight: 700;
+}
+
+h3 {
+    line-height: 1.1cm;
+}
+
+html {
+	height: 100%;
+}
+
+hr {
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.mybutton {
+    margin-inline: 10px;
+}
+
+a:hover {
+    color:white;
+    background-color: rgba(0,0,0,0);
+}
+  </style>
+</head>
+
+<body>
+    <div class="container">
+    	<div class="row">
+    		<div class="col-lg-12">
+    			<div id="content">
+    			<h1>Read More<h1>
+    			<h3>So you are a Bibliophile, yet you struggle to read regularly. Want some help to practice and maintain this good habit? Look no more.</h3>
+    			<hr>
+    			<a href="{% url 'signup' %}" ><button class="btn btn-default btn-lg mybutton"><i class="fas fa-user-plus" aria-hidden="true"></i>  Sign Up</button></a>
+          <a href="{% url 'login' %}" ><button class="btn btn-default btn-lg mybutton"><i class="fas fa-user" aria-hidden="true"></i>  Login</button></a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

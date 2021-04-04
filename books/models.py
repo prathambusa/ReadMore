@@ -4,7 +4,7 @@ from django.db import models
 class books(models.Model):
     title = models.CharField(max_length=120)
     author = models.CharField(max_length=120)
-    isbn = models.PositiveIntegerField(default=9999999999)
+    isbn = models.PositiveIntegerField(default=0)
     genre = models.CharField(max_length=50)
     description = models.TextField()
     

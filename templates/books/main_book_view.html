@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Main Book View</title>
+
+</head>
+<body>
+    <div class="container mb-5">
+        <h2 class="my-5 py-5">The List of Books</h2>
+        <ul>
+            {% for book in object %}
+             <p>
+                <button class="btn btn-lg btn-default mt-2 myb">{{ book.title }}</button><br>
+                <span class="pt-3">{{book.author}}, <small><em>{{ book.genre }}</em></small></span>
+             </p>
+             {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
